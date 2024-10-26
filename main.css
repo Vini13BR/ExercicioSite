@@ -1,0 +1,58 @@
+
+/* RESET */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: azure;
+}
+
+/*Cor para vizualizar*/
+
+
+/*Tamanho da Pagina*/
+.containers {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/*Cor do fundo*/
+body{
+    background-color: #161629;
+}
+
+/* CABEÇALHO */
+body > header{
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    background: linear-gradient(to right, #ffc1e3, #a3c1e3);
+    color: #161629;
+}
+body > header h1{
+    color: #161629;
+}
+body > header li{
+    display: inline;
+}
+body > header a{
+    text-decoration: none;
+    color: #161629;
+    padding: 16px 0 ;
+    margin-right: 10px;
+    font-size: 24px;
+}
+body > header h1{
+    padding: 24px 0;
+    margin-left: 16px;
+    font-size: 38px;
+}
+
+/*Produtos*/
+#Produtos header{
+    margin-top: 48px;
+    margin-bottom: 32px;
+}
+
+
