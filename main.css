@@ -27,7 +27,8 @@ body > header{
     display: flex;
     align-items:center;
     justify-content: space-between;
-    background: linear-gradient(to right, #ffc1e3, #a3c1e3);
+    /*background: linear-gradient(to right, #ffc1e3, #a3c1e3);*/
+    background: linear-gradient(to right, #BF35DE, #DB0FA5);
     color: #161629;
 }
 body > header h1{
@@ -39,10 +40,15 @@ body > header li{
 body > header a{
     text-decoration: none;
     color: #161629;
-    padding: 16px 0 ;
-    margin-right: 10px;
+    padding: 12px 8px ;
+    margin-right: 20px;
     font-size: 24px;
+    border-radius: 10px;
 }
+body > header a:hover{
+    background-color: aliceblue;
+}
+
 body > header h1{
     padding: 24px 0;
     margin-left: 16px;
@@ -53,6 +59,66 @@ body > header h1{
 #Produtos header{
     margin-top: 48px;
     margin-bottom: 32px;
+    text-align: center;
 }
 
+#produtos{
+    display: inline;
+}
+
+.Venda {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 64px;
+}
+
+.Venda produto{
+    width: 25%;
+    height: 400px;
+    background: linear-gradient(to right, #BF35DE, #DB0FA5);
+    padding: 16px 8px;
+    border-radius: 10px;
+}
+
+.Venda produto p, produto h3{
+    color: #161629;
+}
+
+.Venda produto h3{
+    display: block;
+    text-align: center;
+    margin-top: 24px;
+}
+
+.Venda produto:hover{
+    background: linear-gradient(to right, #ffc1e3, #a3c1e3);
+        -ms-transform: scale(1.05);
+        transform: scale(1.05);
+}
+
+.Venda produto img {
+    width: 90%;
+    height: 30%;
+    margin: 0 5%;
+    margin-bottom: 16px;
+}
+
+
+.Venda produto a{
+    background-color: #DBD907;
+    color: #161629;
+    text-decoration: none;
+    text-align: center;
+    padding: 8px 16px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+}
+
+/*SOBRE NÓS*/
+
+.Sobre{
+    display: flex;
+}
 
