@@ -7,6 +7,16 @@
     color: azure;
 }
 
+:root{
+    --cor1: black;
+    --cor2: white;
+    --cor3: #161629;
+    --cor4: #09091b;
+    --cor5: linear-gradient(to right, #BF35DE, #DB0FA5);
+    --cor6: linear-gradient(to right, #ffc1e3, #a3c1e3);
+    --cor7: #fff
+}
+
 /*Cor para vizualizar*/
 
 
@@ -19,7 +29,7 @@
 
 /*Cor do fundo*/
 body{
-    background-color: #161629;
+    background-color: var(--cor3);
 }
 
 /* CABEÇALHO */
@@ -28,25 +38,25 @@ body > header{
     align-items:center;
     justify-content: space-between;
     /*background: linear-gradient(to right, #ffc1e3, #a3c1e3);*/
-    background: linear-gradient(to right, #BF35DE, #DB0FA5);
-    color: #161629;
+    background: var(--cor5);
+    color: var(--cor3);
 }
 body > header h1{
-    color: #161629;
+    color: var(--cor3);
 }
 body > header li{
     display: inline;
 }
 body > header a{
     text-decoration: none;
-    color: #161629;
+    color: var(--cor3);
     padding: 12px 8px ;
     margin-right: 20px;
     font-size: 24px;
     border-radius: 10px;
 }
 body > header a:hover{
-    background-color: aliceblue;
+    background-color: var(--cor2);
 }
 
 body > header h1{
@@ -75,13 +85,13 @@ body > header h1{
 .Venda produto{
     width: 25%;
     height: 400px;
-    background: linear-gradient(to right, #BF35DE, #DB0FA5);
+    background: var(--cor5);
     padding: 16px 8px;
     border-radius: 10px;
 }
 
 .Venda produto p, produto h3{
-    color: #161629;
+    color: var(--cor3);
 }
 
 .Venda produto h3{
@@ -91,7 +101,7 @@ body > header h1{
 }
 
 .Venda produto:hover{
-    background: linear-gradient(to right, #ffc1e3, #a3c1e3);
+    background: var(--cor6);
         -ms-transform: scale(1.05);
         transform: scale(1.05);
 }
@@ -106,7 +116,7 @@ body > header h1{
 
 .Venda produto a{
     background-color: #DBD907;
-    color: #161629;
+    color: var(--cor3);
     text-decoration: none;
     text-align: center;
     padding: 8px 16px;
@@ -118,7 +128,91 @@ body > header h1{
 
 /*SOBRE NÓS*/
 
-.Sobre{
+.box-about {
     display: flex;
+    width: 100%;
+    height: auto;
+    max-width: 600px;
+    margin: 0;
+    padding: 25px;
+    background: var(--cor5);
+    box-shadow: -10px 10px 25px var(--cor4), 10px -10px 25px var(--cor4);
 }
 
+#about {
+    padding: 50px 370px 30px 370px;
+    background-color: var(--cor3);
+}
+.box-about p, .box-about h2{
+    color: var(--cor3);
+}
+
+#box-logo {
+    order: 1;
+    justify-content: center;
+    border-radius: 10px 10px 10px 10px;
+}
+
+#box-logo img {
+    width: 100%;
+    max-width: 290px;
+    height: auto;
+    border: 2px solid var(--cor2);
+    border-radius: 10px;
+    box-shadow: -10px 10px 25px var(--cor5), 10px -10px 25px var(--cor5);
+}
+
+#box-quem {
+    flex-direction: column;
+    color: var(--cor2);
+    border-radius: 10px 10px 10px 10px;
+    line-height: 1.4em;
+}
+
+#about p {
+    margin-bottom: 18px;
+}
+#about h2{
+    text-align: center;
+}
+
+/*  RODAPÉ  */
+
+#Contact{
+    margin-top: 20px;
+    padding: 25px 60px 30px 60px;
+    height: 500px;
+    background: var(--cor5);
+    border-radius: 10px 10px 0 0;
+}
+#Contact h2{
+    padding: 25px 25px;
+    font-size: 50px;
+}
+.conteudo{
+    justify-content: space-between;
+    display: flex;
+}
+.box-contato{
+    display: block;
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+}
+input, textarea, button{
+    max-width: 300px;
+    width: 100%;
+    max-height: 30px;
+    height: 100%;
+}
+textarea{
+    resize: none;
+    max-height: 120px;
+    height: 100%;
+}
+.box-contato h3{
+    font-size: 30px;
+}
+.form{
+    display: flex;
+}
